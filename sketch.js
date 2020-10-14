@@ -1,12 +1,50 @@
-function preload(){
-  // put preload code here
-}
+const colorList = ["yellow",
+  "red",
+  "blue",
+  "violet",
+  "pink",
+  "green"
+];
+
+
+function preload() {}
 
 function setup() {
-  createCanvas(windowWidth,windowHeight)
-  // put setup code here
+
+
+  createCanvas(windowWidth, windowHeight)
+
 }
 
+
+
+
+
 function draw() {
-  // put drawing code here
+
+background("black");
+
+  for (let x = -100; x < 1700; x += 7)
+
+  {
+
+
+
+      if (mouseIsPressed==true) {
+
+        stroke(color(random(colorList)));
+      } else {
+        stroke(color("white"));
+      }
+
+      line(x, 0, x + 100, windowHeight)
+
+
+
+
+
+  }
+
+
+
 }
